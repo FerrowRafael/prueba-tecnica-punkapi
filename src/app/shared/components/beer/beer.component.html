@@ -1,0 +1,31 @@
+  <div class="wrapper">
+    <div class="card beer">
+      <div class="card__image card__image--beer">
+        <img *ngIf="beer.image_url" [src]="beer.image_url" class="card-img" alt="beer">
+        <img *ngIf="!beer.image_url" src="../../../../assets/images/noimage.png" class="card-noimg" width="120%" alt="beer">
+      </div>
+
+      <h5 class="card-title">{{beer.name}}</h5>
+      <div class="card__unit-description">
+        <p class="card-text">{{beer.tagline}}</p>
+      </div>
+
+      <div class="card__unit-stats card__unit-stats--beer clearfix">
+        <div class="one-third">
+          <div class="stat">{{beer.abv}}%</div>
+          <div class="stat-value">Abv</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">{{beer.ibu}}</div>
+          <div class="stat-value">IBU</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">{{beer.volume.value}}</div>
+          <div class="stat-value">Litres</div>
+        </div>
+
+      </div>
+    </div>
+  </div>

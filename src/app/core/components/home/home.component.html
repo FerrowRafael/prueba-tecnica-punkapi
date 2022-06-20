@@ -1,0 +1,28 @@
+<div class="home">
+  <div class="home__background">
+    <picture>
+      <ng-container>
+        <img src="../../../../assets/images/banner3.jpg" alt="banner">
+      </ng-container>
+    </picture>
+  </div>
+
+  <div class="home__container container">
+    <div class="display-t">
+      <div class="home__banner">Offering exceptional quality is a top priority in our factories.</div>
+      <div class="home__search">
+        <app-searcher id="search-bar" class="search-bar-banner" (OnShowSearch)="showSearchEvent($event)"></app-searcher>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container home_collection">
+  <div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let beer of beers">
+        <app-beer [beer]="beer"></app-beer>
+      </div>
+    </div>
+  </div>
+</div>
