@@ -8,7 +8,7 @@ Prueba de Nivel de Angular utilizando una API (PunkApi) https://punkapi.com/
 - [Getting Started](##-Getting-Started)
 - [Documentation](##-Documentation)
 - [Author](##-Author)
-- [Vistas Web]
+- [Vistas Web](##-Author)
 
 
 ## Built With 🛠️
@@ -39,3 +39,6 @@ ng serve
 - [Angular](https://angular.io/)
 - [Bootstrap](https://getbootstrap.com/)
 - [PunkApi](https://punkapi.com/)
+
+## Vistas 👓
+<img src="./src/assets/images/home.png" alt="Home"/>
